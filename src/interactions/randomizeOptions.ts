@@ -1,0 +1,11 @@
+import type { DecisionOption } from '../simulation-engine/types';
+
+/** Fisher-Yates shuffle; option IDs and semantics remain unchanged. */
+export function randomizeOptions(options: DecisionOption[], rng = Math.random) {
+  const result = [...options];
+  for (let i = result.length - 1; i > 0; i -= 1) {
+    const j = Math.floor(rng() * (i + 1));
+    [result[i], result[j]] = [result[j], result[i]];
+  }
+  return result;
+}
