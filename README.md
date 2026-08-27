@@ -1,22 +1,19 @@
-# In the Dock: Navigating a Criminal Trial from Arrest to Verdict
+# i2l — Interactive Learning Lab
 
-An immersive professional criminal-defence simulation based on the supplied SME scenario and Simulation Design Intelligence Brain.
+A home repository for multiple immersive professional-learning simulation projects.
 
-## Status
-Design and simulation-engine foundation implemented. The repository currently contains the product, experience, assessment and technical specifications plus the persistent case-state and decision foundations.
+## Projects
 
-## Core idea
-The learner becomes Adaobi Nwankwo, a newly called Lagos barrister. Decisions made during arrest and detention affect the documentary record available at bail and trial.
+### In the Dock
+**In the Dock: Navigating a Criminal Trial from Arrest to Verdict**
 
-## Repository
-- `docs/PRODUCT_SPEC.md` — product purpose and requirements
-- `docs/SIMULATION_DESIGN.md` — professional genome, five-beat flow and state logic
-- `docs/EXPERIENCE_SPEC.md` — screen/component/interaction specification
-- `docs/ASSESSMENT_MODEL.md` — capability and assessment model
-- `docs/TECHNICAL_ARCHITECTURE.md` — implementation architecture
-- `src/simulation-engine/` — persistent case state and ending logic
-- `src/scenes/` — source-derived scenario data
-- `src/interactions/` — interaction mechanics
+A professional criminal-defence simulation in which the learner becomes Adaobi Nwankwo, a newly called Lagos barrister, and navigates Emeka Chukwuma's case from arrest through verdict.
 
-## Implementation principle
-This is a professional simulation, not a generic quiz or website. Preserve professional authenticity, consequential decisions, persistent case state and the source-defined ending logic.
+**Project location:** `projects/in-the-dock/`
+
+**Core mechanic:** Earlier rights-assertion and documentation decisions change the case record and affect later advocacy.
+
+## Repository principle
+`i2l` is the portfolio/workspace home. Each simulation is self-contained under `projects/<project-name>/` with its own documentation, scenario data, interaction logic and simulation engine.
+
+Do not place project-specific files at repository root unless they genuinely serve the whole i2l workspace.
